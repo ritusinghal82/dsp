@@ -86,14 +86,26 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+P(Brother|Sister) = 1/2
+P(brother & identical twin) = 1/2*1/300
+P(brother & fraternal twin) = 1/4*1/125
+P(identical twin | brother) = (1/2*1/300)/(1/2*1/300 + 1/4*1/25) = 0.41
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+
+In summary, the difference is that, in the Bayesian view, a probability is assigned to a hypothesis. In the frequentist view, a hypothesis is tested without being assigned a probability.
+Some people prefer Bayesian methods for two reasons:
+
+Their end result is a probability distribution, rather than a point estimate. “Instead of having to think in terms of p-values, we can think directly in terms of the distribution of possible effects of our treatment. This makes it much easier to understand and communicate the results of the analysis.”
+Using an informative prior allows them to alleviate many of the issues that plague classical significance testing.
+But there is a counter argument in favor of frequentist approach:
+“They are still going to get essentially the same answer, and a large majority of them put too much faith in confidence and do not understand the assumptions in the model. In those cases, Frequentist is easier to use, and they might as well cut down on the mental cost of trying to figure out priors and such.”
+
+For the groups that have the ability to model priors and understand the difference in the answers that Bayesian gives versus frequentist approaches, Bayesian is usually better, though it can actually be worse on small data sets. Both are equally impacted by variance, though Bayesian approaches tend to handle biased a population distribution better as they adapt better than Gaussian frequentist approaches.
 
 ---
 
